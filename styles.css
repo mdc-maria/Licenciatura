@@ -1,0 +1,89 @@
+body {
+  width  : 100vw;
+  height : 100vh;
+  margin : 0;
+}
+
+ul,
+li {
+  margin     : 0;
+  padding    : 0;
+  list-style : none;
+}
+
+ul {
+  display  : flex;
+  overflow : hidden;
+  height   : 100vh;
+  width    : 100vw;
+}
+
+li {
+  overflow-y         : scroll;
+  overflow           : auto;
+  -webkit-box-flex   : 1;
+  -webkit-flex       : 1;
+  -ms-flex           : 1;
+  flex               : 1;
+  height             : 100vh;
+  -webkit-transition : -webkit-box-flex 500ms ease-out;
+  -webkit-transition : -webkit-flex 500ms ease-out;
+  transition         : -webkit-box-flex 500ms ease-out;
+  transition         : -ms-flex 500ms ease-out;
+  transition         : flex 500ms ease-out;
+  padding            : 20px;
+  -webkit-box-shadow : 2px 0px 4px -1px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow    : 2px 0px 4px -1px rgba(0, 0, 0, 0.66);
+  box-shadow         : 2px 0px 4px -1px rgba(0, 0, 0, 0.66);
+}
+
+ul#vertical-accordion:not(:hover) li.selected,
+li:hover {
+  -webkit-box-flex : 30vw;
+  -webkit-flex     : 30vw;
+  -ms-flex         : 30vw;
+  flex             : 30vw;
+}
+
+.projects {
+  width         : 30vw;
+  height        : auto;
+  margin-bottom : 8vh;
+}
+
+/* ------- PARAGRAPH STYLES ------- */
+
+a {
+  text-decoration : none;
+  color           : black;
+}
+
+a:hover {
+  opacity : 0.5;
+}
+
+.maintitle {
+  width          : 100%;
+  font-size      : 30px;
+  text-transform : uppercase;
+  font-family    : Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+  width       : 30vw;
+  font-size   : 20px;
+  font-family : Arial, Helvetica, sans-serif;
+  font-style  : italic;
+  padding-top: 5px;
+}
+ 
+img {
+  padding-top : 20px;
+  width       : 100%;
+  height      : auto;
+}
+
+p{
+  font-size   : 15px;
+  font-family : Arial, Helvetica, sans-serif;
+}
