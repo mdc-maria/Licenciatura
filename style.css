@@ -1,0 +1,59 @@
+body {
+    width           : 100vw;
+    height          : 100vh;
+    margin          : 0;
+    overflow-x      : hidden;
+    overflow-y      : hidden;
+}
+
+.projectemplate {
+    display         : flex;
+    padding         : 20px;
+    width           : 100vw;
+    height          : 100vh;
+    overflow-x      : hidden;
+    
+}
+
+#split-left{
+    width            : 45%;
+    height           : auto;
+}
+
+#split-right{
+    width            : 55%;
+    display          : flex;
+    top              : 0;
+    right            : 0;
+    flex-direction   : column;
+    overflow         : scroll;
+    overflow-x       : hidden;
+}
+
+#p_img{
+    width           :60%;
+    padding-left    :35%;
+}
+
+
+/* ------- PARAGRAPH STYLES ------- */
+
+#maintitle{
+    font-size       : 30px;
+    font-family     : Arial, Helvetica, sans-serif;
+    text-transform  : uppercase;
+    margin          : 0;
+}
+
+#subtitle{
+    font-size       : 20px;
+    text-transform  : uppercase;
+    font-family     : Arial, Helvetica, sans-serif;
+}
+
+#sinopsis{
+    font-family     : Arial, Helvetica, sans-serif;
+    font-size       : 15px;
+}
+
+

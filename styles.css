@@ -35,6 +35,7 @@ li {
   -webkit-box-shadow : 2px 0px 4px -1px rgba(0, 0, 0, 0.66);
   -moz-box-shadow    : 2px 0px 4px -1px rgba(0, 0, 0, 0.66);
   box-shadow         : 2px 0px 4px -1px rgba(0, 0, 0, 0.66);
+  
 }
 
 ul#vertical-accordion:not(:hover) li.selected,
@@ -43,6 +44,7 @@ li:hover {
   -webkit-flex     : 30vw;
   -ms-flex         : 30vw;
   flex             : 30vw;
+  
 }
 
 .projects {
@@ -50,6 +52,33 @@ li:hover {
   height        : auto;
   margin-bottom : 8vh;
 }
+
+.section{
+  width                               : 30vw;
+  height                              : auto;
+  /* scroll animation */ 
+  -webkit-animation-name              : move;
+  -webkit-animation-duration          : 8s;
+  -webkit-animation-iteration-count   : infinite;
+  -webkit-animation-direction         : up;
+  -webkit-animation-timing-function   :linear;
+}
+
+ #split-left:hover {
+  -webkit-animation-play-state  : paused;
+}
+
+
+@-webkit-keyframes move {
+  0% {
+     transform:translateY(0);
+  }
+  100% {
+     transform:translateY(-100%);
+  }
+}
+
+
 
 /* ------- PARAGRAPH STYLES ------- */
 
